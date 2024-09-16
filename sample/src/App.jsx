@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+const App =() => {
+    return (
+        <>
+            <div className="h-screen w-screen flex justify-center items-center bg-purple-500">
+                <div className="h-4/6 w-[30%] flex justify-center items-center bg-white rounded-md shadow-2xl">
+                    <form className="h-[80%] w-[80%] flex flex-col justify-center items-center gap-4">
+                    {/* <div className="text-3xl"> */}
+                    <span className="align-center font-bold text-2xl">Login</span>
+                    {/* </div> */}
+                    <input type="text" name="" id="" placeholder="Name" className="p-3.5 bg-[#f8f8f8] w-full font-bold outline-none active:outline-none focus:border-b-2 hover:border-purple-500" />
+                    <input type="text" name="" id="" placeholder="email" className="p-3.5 bg-[#f8f8f8] w-full font-bold outline-none active:outline-none focus:border-b-2 hover:border-purple-500" />
+                    <input type="number" name="" id="" placeholder="phone" className="p-3.5 bg-[#f8f8f8] w-full font-bold outline-none active:outline-none focus:border-b-2 hover:border-purple-500" />
+                    <input type="password" name="" id="" placeholder="password" className="p-3.5 bg-[#f8f8f8] w-full font-bold outline-none active:outline-none focus:border-b-2 hover:border-purple-500" />
+                    <button type="submit" className=" p-3.5 w-[100%] bg-purple-600 text-white">Register </button>
+                    </form>
+                </div>
+            </div>
+        </>
+    )
 }
-
-export default App
+export default App;

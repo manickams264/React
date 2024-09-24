@@ -10,7 +10,9 @@ const Navbar = () => {
             </div>
             <div className="h-full w-[50%] flex flex-row items-center justify-center text-white ">
               <div className="w-1/3 h-full flex items-center justify-center p-3 shadow-md  hover:bg-purple-400 gap-2">
-                <button>Profile</button>
+                <Link to={'/'}>
+                  <button>Profile</button>
+                </Link>
               </div>
                 <div className="w-1/3 h-full flex items-center justify-center p-3 shadow-md  hover:bg-purple-400 gap-2">
                   <Link to={'/projects'}>
